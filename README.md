@@ -7,7 +7,7 @@ Self‑evolving AI and layered blockchain architecture for life management. Auto
 ### Prerequisites
 
 - Python 3.10+
-- Node.js 16+ (for frontend/contracts)
+- Node.js 16+ (for contracts)
 
 ### Installation
 
@@ -18,27 +18,50 @@ Self‑evolving AI and layered blockchain architecture for life management. Auto
     cd fuzzywigg-ai
     ```
 
-2. **Install Python dependencies:**
+2. **Install the package:**
+
+    ```bash
+    pip install -e .
+    ```
+
+    Or just install dependencies:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-    *(Note: `requirements.txt` will be populated as we add features)*
+3. **Set up environment variables:**
 
-3. **Run the application:**
-    *(Instructions to be added as features are implemented)*
+    ```bash
+    cp .env.example .env
+    # Edit .env with your API keys
+    ```
+
+4. **Run the demo:**
+
+    ```bash
+    python demo.py
+    ```
+
+### Usage Examples
+
+See **[EXAMPLES.md](EXAMPLES.md)** for detailed usage examples of all components.
 
 ## Security
 
 We take security seriously.
 
-- **PHI Data**: This project is designed with privacy-first principles. Future updates will include PHI de-identification and redaction tools.
-- **Reporting Vulnerabilities**: Please do not report security vulnerabilities through public GitHub issues. Please refer to our [Security Policy](SECURITY.md) (coming soon) or contact the maintainers directly.
+- **PHI Data**: This project implements privacy-first principles with PHI de-identification and redaction.
+- **Reporting Vulnerabilities**: See our **[Security Policy](SECURITY.md)** for how to responsibly report security issues.
+- **Best Practices**: Review **[SECURITY.md](SECURITY.md)** for deployment security checklist.
 
-## Roadmap
+## Documentation
 
-See [ROADMAP.md](ROADMAP.md) for the detailed project roadmap and monetization plan.
+- **[ROADMAP.md](ROADMAP.md)** - Detailed project roadmap and monetization plan
+- **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)** - Complete implementation summary and next steps
+- **[EXAMPLES.md](EXAMPLES.md)** - API usage examples and code samples
+- **[SECURITY.md](SECURITY.md)** - Security policy and best practices
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute to the project
 
 ## License
 
