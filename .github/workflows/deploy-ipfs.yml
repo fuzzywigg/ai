@@ -1,0 +1,22 @@
+name: Deploy to IPFS
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - "nft-site/**"
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Deploy to IPFS
+              uses: ipfs-shipyard/ipfs-deploy-action@v1
+              with:
+                  path: "./nft-site"
+                  service: "pinata"
+                  pinataKey: ${{ secrets.PINATA_KEY }}
+                  pinataSecret: ${{ secrets.PINATA_SECRET }}

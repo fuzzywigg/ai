@@ -1,0 +1,12 @@
+{
+    "name": "fuzzywigg-contracts",
+    "version": "0.1.0",
+    "description": "Smart contracts for Fuzzywigg AI",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.9.0"
+    },
+    "license": "MIT"
+}
